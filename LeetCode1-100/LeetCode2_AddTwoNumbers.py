@@ -17,6 +17,7 @@ class Solution1(object):
         carry = 0
     
         while l1 != None or l2 != None:
+            # if the value of current node is not none, add node value. Else, value = 0.
             if l1 != None:
                 l1Val = l1.val
             else:
