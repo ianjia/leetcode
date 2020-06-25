@@ -1,5 +1,5 @@
 # Brute Force
-class Solution(object):
+class Solution1(object):
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
@@ -12,7 +12,7 @@ class Solution(object):
                     return [i, j]
 
 # Dictionary
-class Solution(object):
+class Solution2(object):
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
