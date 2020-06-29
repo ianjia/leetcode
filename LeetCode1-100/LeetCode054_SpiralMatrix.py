@@ -16,7 +16,7 @@ class Solution(object):
         i = 0
         j = 0
         direction = 0
-        for k in range(rows * columns):
+        for _ in range(rows * columns):
             res.append(matrix[i][j])
             seen[i][j] = True
             rowPos = i + rowChange[direction]
