@@ -17,7 +17,7 @@ class Solution1(object):
         carry = 0
     
         while l1 != None or l2 != None:
-            # if the value of current node is not none, add node value. Else, value = 0.
+            """
             if l1 != None:
                 l1Val = l1.val
             else:
@@ -26,15 +26,22 @@ class Solution1(object):
                 l2Val = l2.val
             else:
                 l2Val = 0
+            """
+            l1Val = l1.val if l1 else 0
+            l2Val = l2.val if l2 else 0
             
             total = carry + l1Val + l2Val
             carry = total // 10
             tailNode.next = ListNode(total % 10)
             tailNode = tailNode.next
+            """
             if l1 != None:
                 l1 = l1.next
             if l2 != None:
                 l2 = l2.next
+            """
+            if l1: l1 = l1.next
+            if l2: l2 = l2.next
                 
         if carry > 0:
             tailNode.next = ListNode(carry)
