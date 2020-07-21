@@ -23,7 +23,7 @@ class Solution2(object):
         if x < 0:
             return False
         
-        listX = map(int, str(x)) 
+        listX = list(map(int, str(x)))
         
         return listX == listX[::-1]
 
