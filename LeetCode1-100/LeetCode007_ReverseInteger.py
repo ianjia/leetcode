@@ -1,5 +1,5 @@
 # Reverse
-class Solution(object):
+class Solution1(object):
     def reverse(self, x):
         """
         :type x: int
