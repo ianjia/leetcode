@@ -61,7 +61,7 @@ class Solution2(object):
         second = dummyNode
         
         # Advances first pointer so that the gap between first and second is n nodes apart
-        for i in range(1, n + 2):
+        for _ in range(1, n + 2):
             first = first.next
             
         # Move first to the end, maintaining the gap
