@@ -5,9 +5,9 @@ class Solution(object):
         :type x: int
         :rtype: int
         """
-        string_of_x = str(abs(x))
+        strOfX = str(abs(x))
             
-        rev = int(string_of_x[::-1])
+        rev = int(strOfX[::-1])
         
         if rev > 2147483648:
             return 0
@@ -15,5 +15,4 @@ class Solution(object):
         if x > 0:
             return rev
         else:
-            rev = rev * -1
-            return rev
+            return rev * -1
