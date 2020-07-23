@@ -1,5 +1,5 @@
 # Two-pointers
-class Solution(object):
+class Solution1(object):
     def trap(self, height):
         """
         :type height: List[int]
