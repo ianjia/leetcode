@@ -11,15 +11,15 @@ class Solution1(object):
             return 0
         
         dp = [sys.maxsize] * len(nums)
-        dp[0] = 0
+        dp[0] = 0 # The first jump is always 0
         
         for i in range(1, len(nums)):
             for j in range(0, i):
-                if dp[j] != sys.maxsize and nums[j] >= i - j:
+                if dp[j] != sys.maxsize and nums[j] >= i - j: # if 1) where it is jumping from is possible to jump to here 2) you can jump that far
                     dp[i] = dp[j] + 1
                     break
                     
-        return dp[len(dp) - 1]
+        return dp[-1]
 
 # Greedy
 class Solution2(object):
