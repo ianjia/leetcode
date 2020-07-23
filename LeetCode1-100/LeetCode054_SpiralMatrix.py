@@ -1,5 +1,5 @@
 # Simulation
-class Solution(object):
+class Solution1(object):
     def spiralOrder(self, matrix):
         """
         :type matrix: List[List[int]]
@@ -11,7 +11,7 @@ class Solution(object):
         
         rows = len(matrix)
         columns = len(matrix[0])
-        seen = [[False] * columns for k in matrix]
+        seen = [[False for col in range(columns)] for row in range(rows)]
         rowChange = [0, 1, 0, -1]
         columnChange = [1, 0, -1, 0]
         i = 0
@@ -26,7 +26,7 @@ class Solution(object):
                 i = rowPos
                 j = columnPos
             else: # turns
-                direction = (direction + 1) % 4
+                direction = (direction + 1) % 4 # Important for changing directions
                 i = i + rowChange[direction]
                 j = j + columnChange[direction]
                 
