@@ -39,7 +39,7 @@ class Solution2(object):
 
         return maxSum
 # Greedy
-class Solution(object):
+class Solution3(object):
     def maxSubArray(self, nums):
         """
         :type nums: List[int]
