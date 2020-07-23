@@ -1,5 +1,5 @@
 # String
-class Solution(object):
+class Solution1(object):
     def countAndSay(self, n):
         """
         :type n: int
