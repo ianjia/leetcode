@@ -15,7 +15,7 @@ class Solution1(object):
         
         for i in range(1, len(nums)):
             for j in range(0, i):
-                if dp[j] != sys.maxsize and nums[j] >= i - j: # if 1) where it is jumping from is possible to jump to here 2) you can jump that far
+                if dp[j] != sys.maxsize and nums[j] >= i - j: # if 1) the starting jump is valid 2) the distance you will jump can reach the distance between j and i
                     dp[i] = dp[j] + 1
                     break
                     
