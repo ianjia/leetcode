@@ -19,7 +19,7 @@ class Solution1(object):
             
         return digits
 
-# Cheat
+# Built-in Functions
 class Solution2(object):
     def plusOne(self, digits):
         """
