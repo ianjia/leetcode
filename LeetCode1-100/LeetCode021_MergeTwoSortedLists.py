@@ -4,6 +4,7 @@ class ListNode(object):
         self.val = x
         self.next = None
 
+# Merge
 class Solution1(object):
     def mergeTwoLists(self, l1, l2):
         """
