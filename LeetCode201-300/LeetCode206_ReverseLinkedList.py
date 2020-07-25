@@ -5,7 +5,7 @@ class ListNode(object):
         self.next = None
 
 # Iterative
-class Solution(object):
+class Solution1(object):
     def reverseList(self, head):
         """
         :type head: ListNode
