@@ -1,5 +1,5 @@
 # Array
-class Solution(object):
+class Solution1(object):
     def productExceptSelf(self, nums):
         """
         :type nums: List[int]
