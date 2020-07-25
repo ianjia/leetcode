@@ -18,7 +18,7 @@ class Queue(object):
         self._items.pop()
 
 # BFS
-class Solution(object):
+class Solution1(object):
     def ladderLength(self, beginWord, endWord, wordList):
         """
         :type beginWord: str
